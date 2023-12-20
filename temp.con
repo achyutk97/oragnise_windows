@@ -1,0 +1,19 @@
+SIMISA@@@@@@@@@@JINX0D0t______
+
+Train (
+	TrainCfg ( "01437 Solapur - Tirupati Special Fare Special"
+		Name ( "01437 Solapur - Tirupati Special Fare Special" )
+		Serial ( 1 )
+		MaxVelocity ( 38.88889 0.24002 )
+		NextWagonUID ( 24 )
+		Durability ( 1.00000 )
+		Engine (
+			UiD ( 0 )
+			EngineData ( BRW_BSL_22974_WAP4 BRW_BSL_22974_WAP4 )
+		)
+		Wagon (
+			WagonData ( BGPro_AJANTA_FALAKNUMA_EXP_ICF_SLR_Utk_CBC BGPro_ICF )
+			UiD ( 1 )
+		)
+	)
+)
