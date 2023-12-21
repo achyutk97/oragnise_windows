@@ -21,5 +21,13 @@
 temp = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET\BGPro_ICF"
 
 import os
+import magic
+
+blob = open('01437 Solapur - Tirupati Special Fare Special.con', 'rb').read()
+m = magic.Magic(mime_encoding=True)
+encoding = m.from_buffer(blob)
+print(encoding)
 
 print(os.path.split(temp))
+
+
