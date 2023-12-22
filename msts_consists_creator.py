@@ -29,18 +29,24 @@ class MstsConsistGen:
         for train in findAllTrain:
             self.trainNumbers.append(train[0])
             self.wholeTrainName.append(" ".join(train))
+        
+        numberOfTrainPresent = len(self.trainNumbers)
 
         dictTrainRake = {}
         for i, j in zip(self.trainNumbers, self.wholeTrainName):
-            print(i)
-            dictTrainRake[j] = self.searchInWebShareRakePosition(i)
+            dictTrainRake[j] = {}
+            loco, rakeType, rakePosition = self.searchInWebShareRakePosition(i)
+            dictTrainRake[j]["loco"] = loco
+            dictTrainRake[j]["rakeType"] = rakeType
+            dictTrainRake[j]["rakePosition"] = rakePosition
 
         jsonData = json.dumps(dictTrainRake, indent=4)
 
+        if len(dictTrainRake.keys()) == numberOfTrainPresent:
+            raise Exception(f"Some Train missing {numberOfTrainPresent}, {len(dictTrainRake.keys())}")
+        
         with open("TrainData.json", "w") as fd:
             fd.write(jsonData)
-
-        print(jsonData)
 
     @staticmethod
     def fixUrl(url):
@@ -50,7 +56,8 @@ class MstsConsistGen:
         return "/".join(temp)
     
 
-    def findRake(metaData):
+    def findRake(soup):
+        metaData = soup.findAll("meta")[1]
 
         findRake = re.findall(r"Composition: (.*) Rake Sharing", str(metaData))
         if len(findRake) == 0:
@@ -58,15 +65,27 @@ class MstsConsistGen:
         
         return findRake[0]
     
+    def findCorrectLoco(self, soup):
+        loco = soup.find("a", href=re.compile("/loco/", re.I))
+
+        if loco is None:
+            loco = ">NA<"
+        findCorrectLoco = re.search(r">(.*)<", str(loco))
+
+        return findCorrectLoco.group(1)
+    
+    def findRakeType(self, soup):
+        rakeType = soup.find("div", class_=re.compile("rakeType", re.I))
+
+        if rakeType is None:
+            rakeType = ">LHB Rake<"
+        findCorrectRake = re.search(r">(.*)<", str(rakeType))
+
+        return findCorrectRake.group(1)
+
     def searchInWebShareRakePosition(self, train):
-
-        # data = requests.get("https://www.trainman.in/coach-position/12627", timeout=3)
-
-        # print(data.text)
-
         page = requests.get(f"https://www.google.dz/search?q= indiarailinfo.com {train}")
         soup = BeautifulSoup(page.content)
-        import re
         links = soup.findAll("a")
 
         trainFound = ""
@@ -86,11 +105,12 @@ class MstsConsistGen:
             data  = requests.get(fix_url)
             soup = BeautifulSoup(data.content)
 
-            metaData = soup.findAll("meta")[1] 
             
-
-            return MstsConsistGen.findRake(metaData)
-        return "Not Found"
+            loco = self.findCorrectLoco(soup)
+            rake = self.findRakeType(soup)
+            rakePosition = MstsConsistGen.findRake(soup)
+            return loco, rake, rakePosition
+        return "Not Found", "NA", "NA"
 
 obj = MstsConsistGen()
 obj.findallTrainInHTML()

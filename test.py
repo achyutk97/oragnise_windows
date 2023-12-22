@@ -18,16 +18,43 @@
     
     # print(LHB_SLR)
 
-temp = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET\BGPro_ICF"
+# temp = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET\BGPro_ICF"
+
+# import os
+# import magic
+
+# blob = open('01437 Solapur - Tirupati Special Fare Special.con', 'rb').read()
+# m = magic.Magic(mime_encoding=True)
+# encoding = m.from_buffer(blob)
+# print(encoding)
+
+# print(os.path.split(temp))
+
+from bs4 import BeautifulSoup
+
+# import re
+# with open("22639.html", "rb") as fd:
+#     data = fd.read()
+
+# soup = BeautifulSoup(data)
+# loco = soup.find("span", {"class": "loco"})
+
+# loco = BeautifulSoup(str(loco))
+
+
+
+# rakeType = soup.find("div", class_=re.compile("rakeType", re.I))
+# if rakeType is None:
+#     rakeType = ">LHB Rake<"
+# findCorrectRake = re.search(r">(.*)<", str(rakeType))
+# print(findCorrectRake.group(1))
 
 import os
-import magic
+import re
 
-blob = open('01437 Solapur - Tirupati Special Fare Special.con', 'rb').read()
-m = magic.Magic(mime_encoding=True)
-encoding = m.from_buffer(blob)
-print(encoding)
+WAP4 = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET"
+ALCO = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET"
+WDM3D = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET\BGPro - WDM-3A Rebuilts"
 
-print(os.path.split(temp))
-
-
+# regex = re.compile('(BRW_(.*)_WAP4.*eng$)')
+# regex = re.compile('(BRW(.*)_WDG*.*eng$)')
