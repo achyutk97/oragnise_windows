@@ -1,5 +1,5 @@
 import os
-import config
+import config as config
 import json
 import re
 import random
@@ -98,7 +98,7 @@ Train (
         os.mkdir(dirName)
             
     with open(f"{dirName}{trainName}.con", "wb") as fd:
-        fd.write(template.encode("utf-16le"))
+        fd.write(template.encode("utf-16"))
 
 
 def readJsonAndCreateTemplate():
@@ -199,4 +199,5 @@ def findCoachesNameForLHB(value: str):
             print(value)
             return "NA Na"
 
-readJsonAndCreateTemplate()
+if __name__ == "__main__":
+    readJsonAndCreateTemplate()

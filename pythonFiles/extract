@@ -1,0 +1,35 @@
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+chrome_options = Options()
+# chrome_options.add_argument("--headless=new")
+import time
+
+
+
+
+txt = input("Enter train number")
+website = f"https://www.google.com/search?q={txt}+india+rail+info"
+
+print(website)
+driver = webdriver.Chrome(options=chrome_options)
+
+driver.get(website)
+
+data = driver.find_element("xpath", '/html/body/div[5]/div/div[12]/div/div[2]/div[2]/div/div/div[1]/div/div/div/div[1]/div/div/span/a/h3')
+
+data.click()
+Rake = driver.find_element("xpath", '//*[@id="MainBody"]/div[9]/table/tbody/tr[4]/td/div/div[2]/div')
+locos = driver.find_element("xpath", '//*[@id="MainBody"]/div[9]/table/tbody/tr[3]/td/div')
+timeTable = driver.find_element(By.CSS_SELECTOR, '.newschtable')
+print(timeTable.text)
+
+print(locos.text)
+
+print(Rake.text.split()[1::2])
+
+import pdb;pdb.set_trace()
+
+    
+
+driver.quit()
