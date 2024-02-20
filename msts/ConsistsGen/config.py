@@ -1,5 +1,6 @@
 import os
 
+IndividualTrainPath = "../InputFiles/individualTrains.log"
 CWD = os.getcwd() + "\\"
 InputFile = CWD + "../InputFiles/trafficTrain.log"
 LHB = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET\VG_LHB_COACHES_SLEEPER"

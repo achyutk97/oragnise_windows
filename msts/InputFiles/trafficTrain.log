@@ -1,969 +1,977 @@
-KCG Kacheguda
+YPR Yesvantpur Jn
 #1
 0.0 km
 /==/
-Zone: SCR
-PF# 2
+Zone: SWR
+PF# 1
 Speed: 92
-Elev: 489m
+Elev: 915m
 
-05:45
+14:45
 Day: 1
-105.9 km
+175.7 km
 21 intermediate stations
-01:09
-MXT Malakpet
+01:54
+YPRA Yesvantpur A Cabin
 #1.1
-1.6 km
+2.5 km
 /==/
-Zone: SCR
+Zone: SWR
 Speed: 92
-Elev: 493m
-05:46
-05:46
+14:47
+14:47
 Day: 1
-DQR Dabirpura
+LOGH Lottegollahalli
 #1.2
-2.8 km
+4.3 km
 /==/
-Zone: SCR
+Zone: SWR
 Speed: 92
-Elev: 499m
-05:47
-05:47
+Elev: 906m
+14:48
+14:48
 Day: 1
-YKA Yakutpura
+KDGH Kodigehalli
 #1.3
-3.6 km
+6.9 km
 /==/
-Zone: SCR
+Zone: SWR
 Speed: 92
-Elev: 503m
-05:47
-05:47
+Elev: 912m
+14:50
+14:50
 Day: 1
-HPG Huppuguda
+YNK Yelahanka Jn
 #1.4
-6.0 km
+12.5 km
 /==/
-Zone: SCR
+Zone: SWR
 Speed: 92
-Elev: 519m
-05:49
-05:49
+Elev: 906m
+14:53
+14:53
 Day: 1
-FM Falaknuma
+RWF Rail Wheel Factory Siding
 #1.5
-7.3 km
+13.3 km
 /==/
-Zone: SCR
+Zone: SWR
 Speed: 92
-Elev: 522m
-05:50
-05:50
+14:54
+14:54
 Day: 1
-
-NSVP NPA Shivram Pally
+RNN Rajanukunte
 #1.6
-12.0 km
+21.3 km
 /==/
-Zone: SCR
+Zone: SWR
 Speed: 92
-05:53
-05:53
+Elev: 916m
+14:59
+14:59
 Day: 1
-BDVL Budvel
+Xing with 16331/Mumbai CSMT - Thiruvananthapuram Central Express | Mon
+DBU Dodballapur
 #1.7
-13.9 km
+33.2 km
 /==/
-Zone: SCR
+Zone: SWR
 Speed: 92
-Elev: 557m
-05:54
-05:54
+15:07
+15:07
 Day: 1
-Overtakes 17254/Secunderabad - Guntur Express | Sun,Mon,Tue,Thu,Fri,Sat
-UR Umdanagar
+ORH Oddarahalli
 #1.8
-20.5 km
+40.7 km
 /==/
-Zone: SCR
+Zone: SWR
+PF#: 1
 Speed: 92
-Elev: 581m
-05:58
-05:58
+Elev: 904m
+15:11
+15:11
 Day: 1
-Xing with 17251/Guntur - Kacheguda Express | Sun,Mon,Tue,Thu,Fri,Sat
-JKTP Jukal
+MKL Makalidurga
 #1.9
-32.2 km
+50.9 km
 /==/
-Zone: SCR
+Zone: SWR
 Speed: 92
-06:06
-06:06
+Elev: 847m
+15:18
+15:18
 Day: 1
-TMX Timmapur
+Xing with 06596/Dharmavaram - KSR Bengaluru MEMU Special | Sun,Mon,Tue,Thu,Fri,Sat
+TDV Thondebhavi
 #1.10
-36.9 km
+60.0 km
 /==/
-Zone: SCR
+Zone: SWR
 Speed: 92
-Elev: 579m
-06:09
-06:09
+15:24
+15:24
 Day: 1
-KOTT Kottur
+SMWA Someshwara
 #1.11
-39.1 km
+66.8 km
 /==/
-Zone: SCR
-PF#: 1
+Zone: SWR
 Speed: 92
-Elev: 590m
-06:11
-06:11
+15:28
+15:28
 Day: 1
-HBLN HBL Nagar
+Overtakes 17212/Kondaveedu Express | Tue,Thu,Sat
+GBD Gauribidanur
 #1.12
-41.5 km
+72.9 km
 /==/
-Zone: SCR
-PF#: 1
+Zone: SWR
 Speed: 92
-Elev: 606m
-06:12
-06:12
+Elev: 681m
+15:32
+15:32
 Day: 1
-Xing with 17651/Chengalpattu - Kacheguda Express | Sun,Mon,Tue,Thu,Fri,Sat
-SHNR Shadnagar
+VWA Viduraswattha
 #1.13
-51.8 km
+78.9 km
 /==/
-Zone: SCR
+Zone: SWR
 Speed: 92
-Elev: 650m
-06:19
-06:19
+15:36
+15:36
 Day: 1
-BRGL Burgula
+DPE Devarapalle
 #1.14
-61.9 km
+85.4 km
 /==/
-Zone: SCR
+Zone: SWR
 Speed: 92
-06:25
-06:25
+15:40
+15:40
 Day: 1
-BABR Balanagar
+HUP Hindupur
 #1.15
-65.4 km
+96.2 km
 /==/
-Zone: SCR
+Zone: SWR
 Speed: 92
-06:28
-06:28
+Elev: 628m
+15:47
+15:47
 Day: 1
-RRGA Ranga Reddy Guda
+MLU Malugur
 #1.16
-70.8 km
+106.6 km
 /==/
-Zone: SCR
+Zone: SWR
 Speed: 92
-06:31
-06:31
+Elev: 628m
+15:54
+15:54
 Day: 1
-RJAP Rajapur
+Xing with 22883/Puri - Yesvantpur Weekly Garib Rath Express | Sat
+CPL Chakarlapalli
 #1.17
-75.9 km
+119.4 km
 /==/
-Zone: SCR
+Zone: SWR
+PF#: 1
 Speed: 92
-06:34
-06:34
+Elev: 635m
+16:02
+16:02
 Day: 1
-GLY Gollapalli
+Xing with 06516/Sri Sathya Sai Prashanthi Nilayam - KSR Bengaluru MEMU Express Special | Sun,Mon,Tue,Thu,Fri,Sat
+REPI Rangepalli
 #1.18
-80.7 km
+122.5 km
 /==/
-Zone: SCR
+Zone: SWR
 Speed: 92
-06:38
-06:38
+Elev: 633m
+16:04
+16:04
 Day: 1
-Xing with 12649/Karnataka Sampark Kranti Express (Via Ballari) | Sun,Mon,Tue,Thu,Sat
-JCL Jadcherla
+PKD Penukonda Jn
 #1.19
-88.2 km
-/==/
-Zone: SCR
+133.7 km
+%==%
+Zone: SWR
 Speed: 92
-Elev: 539m
-06:43
-06:43
+Elev: 547m
+16:12
+16:12
 Day: 1
-DTP Divitipalli
+Overtakes 18464/Prasanti Express | Sun,Mon,Tue,Thu,Fri,Sat
+MKJ Makkajipalli
 #1.20
-96.0 km
-/==/
-Zone: SCR
+145.8 km
+%==%
+Zone: SWR
+PF#: 1
 Speed: 92
-Elev: 515m
-06:48
-06:48
+Elev: 491m
+16:20
+16:20
 Day: 1
-Xing with 07790/Mahbubnagar - Kacheguda MEMU Special | Sun,Mon,Tue,Thu,Fri,Sat
-YNG Yenugonda
+NGM Nagasamudram
 #1.21
-101.8 km
-/==/
-Zone: SCR
+160.8 km
+%==%
+Zone: SWR
 PF#: 1
 Speed: 92
-Elev: 506m
-06:51
-06:51
+Elev: 423m
+16:29
+16:29
 Day: 1
-MBNR Mahbubnagar
+DMM Dharmavaram Jn
 #2
-105.9 km
-/==/
+175.7 km
+%==%
 Zone: SCR
-PF# 2
-Speed: 83
-Elev: 509m
-06:54
-06:55
+PF# 3
+Speed: 87
+Elev: 357m
+16:39
+16:40
 Day: 1
-130.6 km
-22 intermediate stations
-01:34
-MHBT Mahbubnagar Town Halt
+Overtakes 12975/Mysuru - Jaipur SF Express | Thu,Sat
+Xing with 12648/Kongu SF Express | Thu
+33.3 km
+3 intermediate stations
+00:23
+CCA Chigicherla
 #2.1
-108.4 km
-/--/
+186.8 km
+/==/
 Zone: SCR
-PF#: 1
-Speed: 83
-Elev: 502m
-06:57
-06:57
+Speed: 87
+Elev: 375m
+16:48
+16:48
 Day: 1
-MQN Manyamkonda
+ZPL Zangalapalle
 #2.2
-119.8 km
-/--/
+196.3 km
+/==/
 Zone: SCR
-PF#: 1
-Speed: 83
-Elev: 422m
-07:05
-07:05
+Speed: 87
+Elev: 372m
+16:54
+16:54
 Day: 1
-KTKA Kotakadra
+PSPY Prasannayana Palli
 #2.3
-124.2 km
-/--/
-Zone: SCR
-PF#: 1
-Speed: 83
-07:08
-07:08
-Day: 1
-DKC Devarkadra Jn
-#2.4
-130.3 km
-/--/
-Zone: SCR
-Speed: 83
-07:13
-07:13
-Day: 1
-Xing with 17028/Hundry Express | Sun,Mon,Tue,Thu,Fri,Sat
-DKUR Dokur
-#2.5
-135.1 km
-/--/
-Zone: SCR
-PF#: 1
-Speed: 83
-07:16
-07:16
-Day: 1
-KQQ Kaukuntla
-#2.6
-140.9 km
-/--/
-Zone: SCR
-PF#: 1
-Speed: 83
-07:20
-07:20
-Day: 1
-KXI Kurumurthi
-#2.7
-146.1 km
-/--/
-Zone: SCR
-PF#: 1
-Speed: 83
-07:24
-07:24
-Day: 1
-PERR Perur
-#2.8
-148.8 km
-/--/
-Zone: SCR
-Speed: 83
-07:26
-07:26
-Day: 1
-KONN Konnur
-#2.9
-154.3 km
-/--/
-Zone: SCR
-PF#: 1
-Speed: 83
-07:30
-07:30
-Day: 1
-WPR Wanaparti Road
-#2.10
-159.3 km
-/--/
-Zone: SCR
-Speed: 83
-07:33
-07:33
-Day: 1
-Xing with 12647/Kongu SF Express | Mon
-Xing with 12251/Wainganga SF Express | Sat
-Xing with 22683/Yesvantpur - Lucknow SF Express (via Kacheguda) | Tue
-Xing with 15024/Yesvantpur - Gorakhpur Express (Via Ayodhya Cantt) | Fri
-AJK Ajjakolu
-#2.11
-165.4 km
-/--/
-Zone: SCR
-PF#: 1
-Speed: 83
-07:38
-07:38
-Day: 1
-SRNR Sriramnagar
-#2.12
-168.7 km
-/--/
-Zone: SCR
-Speed: 83
-07:40
-07:40
-Day: 1
-ARPL Arepalli Halt
-#2.13
-173.3 km
-/--/
-Zone: SCR
-PF#: 1
-Speed: 83
-07:44
-07:44
-Day: 1
-GWD Gadwal Jn
-#2.14
-181.1 km
-/--/
-Zone: SCR
-Speed: 83
-07:49
-07:49
-Day: 1
-Xing with 17436/Kurnool City - Kacheguda DEMU Express | Sun,Mon,Tue,Thu,Fri,Sat
-PDO Poodoor
-#2.15
-189.2 km
-/--/
-Zone: SCR
-PF#: 1
-Speed: 83
-07:55
-07:55
-Day: 1
-PDNA Peddadinne
-#2.16
-195.8 km
-/--/
-Zone: SCR
-PF#: 1
-Speed: 83
-08:00
-08:00
-Day: 1
-IKI Itikyala
-#2.17
-199.4 km
-/--/
-Zone: SCR
-PF#: 1
-Speed: 83
-08:02
-08:02
-Day: 1
-VEML Vemula
-#2.18
-205.7 km
-/--/
-Zone: SCR
-Speed: 83
-08:07
-08:07
-Day: 1
-MOA Manopad
-#2.19
-212.8 km
-/--/
-Zone: SCR
-PF#: 1
-Speed: 83
-Elev: 310m
-08:12
-08:12
-Day: 1
-PUPU Pothulapadu
-#2.20
-221.7 km
-/--/
-Zone: SCR
-Speed: 83
-08:18
-08:18
-Day: 1
-Xing with 22716/Madurai - Kacheguda Weekly Superfast Express | Mon
-Xing with 16354/Nagercoil - Kacheguda Weekly Express | Sun
-SBBJ Sri Bala Brahmeswara Jogulamba Halt
-#2.21
-226.7 km
-/--/
-Zone: SCR
-PF#: 1
-Speed: 83
-Elev: 310m
-08:22
-08:22
-Day: 1
-ALPR Alampur Road
-#2.22
-229.1 km
-/--/
-Zone: SCR
-PF#: 1
-Speed: 83
-Elev: 309m
-08:24
-08:24
-Day: 1
-Xing with 07671/Guntakal - Bodhan Passenger Special | Sun,Mon,Tue,Thu,Fri,Sat
-KRNT Kurnool City
-#3
-236.4 km
-/--/
-Zone: SCR
-PF# 2
-Speed: 84
-Elev: 288m
-08:29
-08:30
-Day: 1
-166.5 km
-21 intermediate stations
-01:59
-KOLA Kotla
-#3.1
-238.9 km
-/--/
-Zone: SCR
-PF#: 1
-Speed: 84
-Elev: 288m
-08:32
-08:32
-Day: 1
-Xing with 07498/Nandyal - Kurnool City DEMU Express Special | Sun,Mon,Tue,Thu,Fri,Sat
-DUU Dupadu
-#3.2
-247.2 km
-/--/
-Zone: SCR
-PF#: 1
-Speed: 84
-Elev: 310m
-08:38
-08:38
-Day: 1
-UKD Ulindakonda
-#3.3
-258.5 km
-/--/
-Zone: SCR
-PF#: 1
-Speed: 84
-Elev: 330m
-08:46
-08:46
-Day: 1
-ALGU Allugundu
-#3.4
-264.0 km
-/--/
-Zone: SCR
-Speed: 84
-08:50
-08:50
-Day: 1
-VDI Veldurti
-#3.5
-270.6 km
-/--/
-Zone: SCR
-Speed: 84
-Elev: 342m
-08:54
-08:54
-Day: 1
-BVO Bogolu
-#3.6
-280.5 km
-/--/
-Zone: SCR
-PF#: 1
-Speed: 84
-Elev: 370m
-09:02
-09:02
-Day: 1
-DHNE Dhone Jn
-#3.7
-290.5 km
+205.6 km
 /==/
 Zone: SCR
-Speed: 84
-09:09
-09:09
-Day: 1
-Technical Halt
-MYL Malliyala
-#3.8
-301.1 km
-/==/
-Zone: SCR
-Speed: 84
-Elev: 439m
-09:16
-09:16
-Day: 1
-LMD Linganenidoddi
-#3.9
-309.8 km
-/==/
-Zone: SCR
-Speed: 84
-Elev: 473m
-09:22
-09:22
-Day: 1
-PDL Pendekallu Jn
-#3.10
-316.4 km
-/--/
-Zone: SCR
-Speed: 84
-09:27
-09:27
-Day: 1
-RLPL Rama Lingaya Palle
-#3.11
-326.1 km
-/--/
-Zone: SCR
-Speed: 84
-09:34
-09:34
-Day: 1
-PGDI Pagidirai
-#3.12
-330.8 km
-/--/
-Zone: SCR
 PF#: 1
-Speed: 84
-09:37
-09:37
-Day: 1
-GY Gooty Jn
-#3.13
-345.8 km
-/==/
-Zone: SCR
-Speed: 84
-Elev: 365m
-09:48
-09:48
-Day: 1
-Xing with 22832/Sri Sathya Sai Prashanthi Nilayam - Howrah SF Express | Fri
-GYJ Gooty Cabin
-#3.14
-348.1 km
-/==/
-Zone: SCR
-Speed: 84
-09:50
-09:50
-Day: 1
-YY-GYB Gooty Bypass Cabin
-#3.15
-349.3 km
-/==/
-Zone: SCR
-Speed: 84
-09:51
-09:51
-Day: 1
-Xing with 07694/Hindupur - Guntakal DEMU Special | Sun,Mon,Tue,Thu,Fri,Sat
-TKPY Thurakapalli
-#3.16
-354.7 km
-/==/
-Zone: SCR
-Speed: 84
-09:54
-09:54
-Day: 1
-RRJ Ramaraju Palli
-#3.17
-360.6 km
-/==/
-Zone: SCR
-Speed: 84
-Elev: 329m
-09:59
-09:59
-Day: 1
-PMD Pamidi
-#3.18
-367.7 km
-/==/
-Zone: SCR
-Speed: 84
-10:04
-10:04
-Day: 1
-KLU Kalluru Jn
-#3.19
-375.3 km
-/==/
-Zone: SCR
-Speed: 84
-10:09
-10:09
-Day: 1
-GDE Garladinne
-#3.20
-386.5 km
-/==/
-Zone: SCR
-Speed: 84
-Elev: 338m
-10:17
-10:17
-Day: 1
-TAC Taticherla
-#3.21
-395.5 km
-/==/
-Zone: SCR
-Speed: 84
-Elev: 343m
-10:24
-10:24
+Speed: 87
+Elev: 360m
+17:01
+17:01
 Day: 1
 ATP Anantapur
-#4
-402.9 km
+#3
+209.0 km
 /==/
 Zone: SCR
 PF# 4
-Speed: 48
+Speed: 75
 Elev: 342m
-10:29
-10:32
+17:03
+17:06
 Day: 1
-33.3 km
-3 intermediate stations
-00:42
-PSPY Prasannayana Palli
-#4.1
-406.4 km
-/==/
-Zone: SCR
-PF#: 1
-Speed: 48
-Elev: 360m
-10:36
-10:36
-Day: 1
-ZPL Zangalapalle
-#4.2
-415.7 km
-/==/
-Zone: SCR
-Speed: 48
-Elev: 372m
-10:48
-10:48
-Day: 1
-CCA Chigicherla
-#4.3
-425.2 km
-/==/
-Zone: SCR
-Speed: 48
-Elev: 375m
-11:00
-11:00
-Day: 1
-DMM Dharmavaram Jn
-#5
-436.2 km
-/==/
-Zone: SCR
-PF# 1
-Speed: 64
-Elev: 357m
-11:14
-11:15
-Day: 1
-Xing with 16614/Coimbatore - Rajkot Express | Fri
-175.7 km
+166.5 km
 21 intermediate stations
-02:45
-NGM Nagasamudram
+02:13
+TAC Taticherla
+#3.1
+216.4 km
+/==/
+Zone: SCR
+Speed: 75
+Elev: 343m
+17:12
+17:12
+Day: 1
+GDE Garladinne
+#3.2
+225.4 km
+/==/
+Zone: SCR
+Speed: 75
+Elev: 338m
+17:19
+17:19
+Day: 1
+Xing with 07693/Guntakal - Hindupur DEMU Special | Sun,Mon,Tue,Thu,Fri,Sat
+KLU Kalluru Jn
+#3.3
+236.6 km
+/==/
+Zone: SCR
+Speed: 75
+17:28
+17:28
+Day: 1
+PMD Pamidi
+#3.4
+244.3 km
+/==/
+Zone: SCR
+Speed: 75
+17:34
+17:34
+Day: 1
+RRJ Ramaraju Palli
+#3.5
+251.4 km
+/==/
+Zone: SCR
+Speed: 75
+Elev: 329m
+17:40
+17:40
+Day: 1
+TKPY Thurakapalli
+#3.6
+257.3 km
+/==/
+Zone: SCR
+Speed: 75
+17:45
+17:45
+Day: 1
+YY-GYB Gooty Bypass Cabin
+#3.7
+262.6 km
+/==/
+Zone: SCR
+Speed: 75
+17:49
+17:49
+Day: 1
+GYJ Gooty Cabin
+#3.8
+263.8 km
+/==/
+Zone: SCR
+Speed: 75
+17:50
+17:50
+Day: 1
+GY Gooty Jn
+#3.9
+266.1 km
+/--/
+Zone: SCR
+Speed: 75
+Elev: 365m
+17:52
+17:52
+Day: 1
+PGDI Pagidirai
+#3.10
+281.2 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+18:04
+18:04
+Day: 1
+RLPL Rama Lingaya Palle
+#3.11
+285.9 km
+/--/
+Zone: SCR
+Speed: 75
+18:07
+18:07
+Day: 1
+Xing with 22831/Howrah - Sri Sathya Sai Prashanthi Nilayam Superfast Express | Thu
+PDL Pendekallu Jn
+#3.12
+295.5 km
+/==/
+Zone: SCR
+Speed: 75
+18:15
+18:15
+Day: 1
+Xing with 07670/Kacheguda - Guntakal Passenger Special | Sun,Mon,Tue,Thu,Fri,Sat
+LMD Linganenidoddi
+#3.13
+302.1 km
+/==/
+Zone: SCR
+Speed: 75
+Elev: 473m
+18:20
+18:20
+Day: 1
+MYL Malliyala
+#3.14
+310.8 km
+/==/
+Zone: SCR
+Speed: 75
+Elev: 439m
+18:27
+18:27
+Day: 1
+DHNE Dhone Jn
+#3.15
+321.4 km
+/--/
+Zone: SCR
+Speed: 75
+18:36
+18:36
+Day: 1
+Xing with 07499/Kurnool City - Nandyal DEMU Express Special | Sun,Mon,Tue,Thu,Fri,Sat
+BVO Bogolu
+#3.16
+331.4 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+Elev: 370m
+18:44
+18:44
+Day: 1
+VDI Veldurti
+#3.17
+341.4 km
+/--/
+Zone: SCR
+Speed: 75
+Elev: 342m
+18:52
+18:52
+Day: 1
+ALGU Allugundu
+#3.18
+348.0 km
+/--/
+Zone: SCR
+Speed: 75
+18:57
+18:57
+Day: 1
+UKD Ulindakonda
+#3.19
+353.5 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+Elev: 330m
+19:01
+19:01
+Day: 1
+DUU Dupadu
+#3.20
+364.8 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+Elev: 310m
+19:10
+19:10
+Day: 1
+KOLA Kotla
+#3.21
+373.0 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+Elev: 288m
+19:17
+19:17
+Day: 1
+KRNT Kurnool City
+#4
+375.5 km
+/--/
+Zone: SCR
+PF# 2
+Speed: 75
+Elev: 288m
+19:19
+19:20
+Day: 1
+Xing with 16353/Kacheguda - Nagercoil Weekly Express | Sun
+130.6 km
+22 intermediate stations
+01:44
+ALPR Alampur Road
+#4.1
+382.8 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+Elev: 309m
+19:26
+19:26
+Day: 1
+SBBJ Sri Bala Brahmeswara Jogulamba Halt
+#4.2
+385.2 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+Elev: 310m
+19:28
+19:28
+Day: 1
+PUPU Pothulapadu
+#4.3
+390.3 km
+/--/
+Zone: SCR
+Speed: 75
+19:32
+19:32
+Day: 1
+MOA Manopad
+#4.4
+399.1 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+Elev: 310m
+19:39
+19:39
+Day: 1
+VEML Vemula
+#4.5
+406.2 km
+/--/
+Zone: SCR
+Speed: 75
+19:44
+19:44
+Day: 1
+IKI Itikyala
+#4.6
+412.5 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+19:49
+19:49
+Day: 1
+Xing with 17652/Kacheguda - Chengalpattu Express | Sun,Mon,Tue,Thu,Fri,Sat
+PDNA Peddadinne
+#4.7
+416.2 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+19:52
+19:52
+Day: 1
+PDO Poodoor
+#4.8
+422.7 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+19:58
+19:58
+Day: 1
+Xing with 17027/Hundry Express | Sun,Mon,Tue,Thu,Fri,Sat
+GWD Gadwal Jn
+#4.9
+430.9 km
+/--/
+Zone: SCR
+Speed: 75
+20:04
+20:04
+Day: 1
+ARPL Arepalli Halt
+#4.10
+438.6 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+20:10
+20:10
+Day: 1
+Xing with 12766/Amravati - Tirupati SF Express | Mon,Thu
+Xing with 12770/Seven Hills SF Express | Tue,Fri
+SRNR Sriramnagar
+#4.11
+443.2 km
+/--/
+Zone: SCR
+Speed: 75
+20:14
+20:14
+Day: 1
+AJK Ajjakolu
+#4.12
+446.5 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+20:17
+20:17
+Day: 1
+WPR Wanaparti Road
+#4.13
+452.6 km
+/--/
+Zone: SCR
+Speed: 75
+20:21
+20:21
+Day: 1
+KONN Konnur
+#4.14
+457.6 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+20:25
+20:25
+Day: 1
+Xing with 07606/Akola - Tirupati SF Special Fare Special | Sun
+PERR Perur
+#4.15
+463.1 km
+/--/
+Zone: SCR
+Speed: 75
+20:30
+20:30
+Day: 1
+KXI Kurumurthi
+#4.16
+465.9 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+20:32
+20:32
+Day: 1
+KQQ Kaukuntla
+#4.17
+471.0 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+20:36
+20:36
+Day: 1
+Xing with 17435/Kacheguda - Kurnool City Express | Sun,Mon,Tue,Thu,Fri,Sat
+DKUR Dokur
+#4.18
+476.9 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+20:41
+20:41
+Day: 1
+Xing with 12785/Kacheguda - Mysuru SF Express | Sun,Mon,Tue,Thu,Fri,Sat
+DKC Devarkadra Jn
+#4.19
+481.7 km
+/--/
+Zone: SCR
+Speed: 75
+20:45
+20:45
+Day: 1
+Xing with 22706/Jammu Tawi - Tirupati Humsafar Express | Sat
+KTKA Kotakadra
+#4.20
+487.8 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+20:49
+20:49
+Day: 1
+MQN Manyamkonda
+#4.21
+492.1 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+Elev: 422m
+20:53
+20:53
+Day: 1
+MHBT Mahbubnagar Town Halt
+#4.22
+503.5 km
+/--/
+Zone: SCR
+PF#: 1
+Speed: 75
+Elev: 502m
+21:02
+21:02
+Day: 1
+MBNR Mahbubnagar
+#5
+506.1 km
+/==/
+Zone: SCR
+PF# 2
+Speed: 55
+Elev: 509m
+21:04
+21:05
+Day: 1
+105.9 km
+21 intermediate stations
+01:55
+YNG Yenugonda
 #5.1
-451.2 km
-%==%
-Zone: SWR
+510.1 km
+/==/
+Zone: SCR
 PF#: 1
-Speed: 64
-Elev: 423m
-11:29
-11:29
+Speed: 55
+Elev: 506m
+21:09
+21:09
 Day: 1
-MKJ Makkajipalli
+DTP Divitipalli
 #5.2
-466.2 km
-%==%
-Zone: SWR
-PF#: 1
-Speed: 64
-Elev: 491m
-11:43
-11:43
+516.0 km
+/==/
+Zone: SCR
+Speed: 55
+Elev: 515m
+21:16
+21:16
 Day: 1
-PKD Penukonda Jn
+Overtakes 16733/Rameswaram - Okha Express | Sat
+Xing with 12797/Venkatadri SF Express | Sun,Mon,Tue,Thu,Fri,Sat
+JCL Jadcherla
 #5.3
-478.3 km
+523.7 km
 /==/
-Zone: SWR
-Speed: 64
-Elev: 547m
-11:54
-11:54
+Zone: SCR
+Speed: 55
+Elev: 539m
+21:24
+21:24
 Day: 1
-REPI Rangepalli
+GLY Gollapalli
 #5.4
-489.5 km
+531.3 km
 /==/
-Zone: SWR
-Speed: 64
-Elev: 633m
-12:05
-12:05
+Zone: SCR
+Speed: 55
+21:32
+21:32
 Day: 1
-CPL Chakarlapalli
+Overtakes 12790/Mangaluru Central - Kacheguda SF Express | Sun,Thu
+RJAP Rajapur
 #5.5
-492.6 km
+536.0 km
 /==/
-Zone: SWR
-PF#: 1
-Speed: 64
-Elev: 635m
-12:08
-12:08
+Zone: SCR
+Speed: 55
+21:38
+21:38
 Day: 1
-MLU Malugur
+RRGA Ranga Reddy Guda
 #5.6
-505.3 km
+541.1 km
 /==/
-Zone: SWR
-Speed: 64
-Elev: 628m
-12:20
-12:20
+Zone: SCR
+Speed: 55
+21:43
+21:43
 Day: 1
-HUP Hindupur
+BABR Balanagar
 #5.7
-515.8 km
+546.6 km
 /==/
-Zone: SWR
-Speed: 64
-Elev: 628m
-12:30
-12:30
+Zone: SCR
+Speed: 55
+21:49
+21:49
 Day: 1
-DPE Devarapalle
+BRGL Burgula
 #5.8
-526.5 km
+550.1 km
 /==/
-Zone: SWR
-Speed: 64
-12:40
-12:40
+Zone: SCR
+Speed: 55
+21:53
+21:53
 Day: 1
-Xing with 19567/Tuticorin - Okha Vivek Express | Mon
-VWA Viduraswattha
+Xing with 17603/Kacheguda - Yelahanka Express | Sun,Mon,Tue,Thu,Fri,Sat
+Xing with 17603-Slip/Kacheguda - SSS Hubballi Prasanti Nilayam Express Slip | Mon,Thu,Sat
+Xing with 17603-Slip2/Kacheguda - Vasco Da Gama Express Slip | Sun,Tue,Fri
+SHNR Shadnagar
 #5.9
-533.0 km
+560.1 km
 /==/
-Zone: SWR
-Speed: 64
-12:46
-12:46
+Zone: SCR
+Speed: 55
+Elev: 650m
+22:04
+22:04
 Day: 1
-GBD Gauribidanur
+Xing with 17252/Kacheguda - Guntur Express | Sun,Mon,Tue,Thu,Fri,Sat
+HBLN HBL Nagar
 #5.10
-539.0 km
+570.5 km
 /==/
-Zone: SWR
-Speed: 64
-Elev: 681m
-12:52
-12:52
-Day: 1
-SMWA Someshwara
-#5.11
-545.2 km
-/==/
-Zone: SWR
-Speed: 64
-12:57
-12:57
-Day: 1
-TDV Thondebhavi
-#5.12
-552.0 km
-/==/
-Zone: SWR
-Speed: 64
-13:04
-13:04
-Day: 1
-MKL Makalidurga
-#5.13
-561.0 km
-/==/
-Zone: SWR
-Speed: 64
-Elev: 847m
-13:12
-13:12
-Day: 1
-ORH Oddarahalli
-#5.14
-571.3 km
-/==/
-Zone: SWR
+Zone: SCR
 PF#: 1
-Speed: 64
-Elev: 904m
-13:22
-13:22
+Speed: 55
+Elev: 606m
+22:15
+22:15
 Day: 1
-DBU Dodballapur
+KOTT Kottur
+#5.11
+572.8 km
+/==/
+Zone: SCR
+PF#: 1
+Speed: 55
+Elev: 590m
+22:17
+22:17
+Day: 1
+TMX Timmapur
+#5.12
+575.0 km
+/==/
+Zone: SCR
+Speed: 55
+Elev: 579m
+22:20
+22:20
+Day: 1
+JKTP Jukal
+#5.13
+579.8 km
+/==/
+Zone: SCR
+Speed: 55
+22:25
+22:25
+Day: 1
+Overtakes 09519/Madurai - Okha Special Fare Special | Fri
+Xing with 19301/Dr. Ambedkar Nagar - Yesvantpur Weekly Express | Mon
+Xing with 07789/Kacheguda - Mahabubnagar MEMU Special | Sun,Mon,Tue,Thu,Fri,Sat
+UR Umdanagar
+#5.14
+591.5 km
+/==/
+Zone: SCR
+Speed: 55
+Elev: 581m
+22:38
+22:38
+Day: 1
+Overtakes 16003/MGR Chennai Central - Nagarsol Weekly Express | Sun
+BDVL Budvel
 #5.15
-578.8 km
+598.0 km
 /==/
-Zone: SWR
-Speed: 64
-13:29
-13:29
+Zone: SCR
+Speed: 55
+Elev: 557m
+22:45
+22:45
 Day: 1
-RNN Rajanukunte
+Xing with 47159/Lingampalli - Umdanagar MMTS | Sun,Mon,Tue,Thu,Fri,Sat
+NSVP NPA Shivram Pally
 #5.16
-590.7 km
+599.9 km
 /==/
-Zone: SWR
-Speed: 64
-Elev: 916m
-13:40
-13:40
+Zone: SCR
+Speed: 55
+22:47
+22:47
 Day: 1
-RWF Rail Wheel Factory Siding
+FM Falaknuma
 #5.17
-598.7 km
+604.7 km
 /==/
-Zone: SWR
-Speed: 64
-13:48
-13:48
+Zone: SCR
+Speed: 55
+Elev: 522m
+22:52
+22:52
 Day: 1
-YNK Yelahanka Jn
+HPG Huppuguda
 #5.18
-599.4 km
+606.0 km
 /==/
-Zone: SWR
-Speed: 64
-Elev: 906m
-13:48
-13:48
+Zone: SCR
+Speed: 55
+Elev: 519m
+22:53
+22:53
 Day: 1
-KDGH Kodigehalli
+YKA Yakutpura
 #5.19
-605.0 km
+608.3 km
 /==/
-Zone: SWR
-Speed: 64
-Elev: 912m
-13:53
-13:53
+Zone: SCR
+Speed: 55
+Elev: 503m
+22:56
+22:56
 Day: 1
-LOGH Lottegollahalli
+DQR Dabirpura
 #5.20
-607.7 km
-%==%
-Zone: SWR
-Speed: 64
-Elev: 906m
-13:56
-13:56
-Day: 1
-YPRA Yesvantpur A Cabin
-#5.21
-609.5 km
+609.1 km
 /==/
-Zone: SWR
-Speed: 64
-13:58
-13:58
+Zone: SCR
+Speed: 55
+Elev: 499m
+22:57
+22:57
 Day: 1
-YPR Yesvantpur Jn
+Xing with 47194/Lingampalli - Umdanagar MMTS | Sun,Mon,Tue,Thu,Fri,Sat
+MXT Malakpet
+#5.21
+610.3 km
+/==/
+Zone: SCR
+Speed: 55
+Elev: 493m
+22:58
+22:58
+Day: 1
+KCG Kacheguda
 #6
 612.0 km
 /==/
-Zone: SWR
+Zone: SCR
 PF# 1
-
-Elev: 915m
-14:00
-
-Day: 1

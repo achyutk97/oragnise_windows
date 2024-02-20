@@ -56,8 +56,34 @@ class MstsConsistGen:
             with open("TrainData.json", "w") as fd:
                 fd.write(jsonData)
         else:
-            pass
+            with open(config.IndividualTrainPath, "r") as fd:
+                self.data = fd.read()
+                
+            if len(self.data) == 0:
+                raise Exception("Please provide proper input file.")
             
+            for i in self.data.split("\n"):
+                self.trainNumbers.append(i.split()[0])
+                self.wholeTrainName.append(i)
+            
+            numberOfTrainPresent = len(self.trainNumbers)
+            
+            dictTrainRake = {}
+            for i, j in zip(self.trainNumbers, self.wholeTrainName):
+                dictTrainRake[j] = {}
+                loco, rakeType, rakePosition = self.searchInWebShareRakePosition(i)
+                dictTrainRake[j]["loco"] = loco
+                dictTrainRake[j]["rakeType"] = rakeType
+                dictTrainRake[j]["rakePosition"] = rakePosition
+                dictTrainRake[j]["trainType"] = self.findTrainType(j)
+
+            jsonData = json.dumps(dictTrainRake, indent=4)
+
+            if len(dictTrainRake.keys()) != numberOfTrainPresent:
+                raise Exception(f"Some Train missing {numberOfTrainPresent}, {len(dictTrainRake.keys())}")
+            
+            with open("TrainData.json", "w") as fd:
+                fd.write(jsonData)
 
     @staticmethod
     def fixUrl(url):
@@ -141,33 +167,35 @@ class MstsConsistGen:
         from selenium.webdriver.chrome.options import Options
         from selenium.webdriver.common.by import By
         chrome_options = Options()
+        chrome_options.add_argument("--headless=new")
+        # try:
+        driver = webdriver.Chrome(options=chrome_options)
+        # if os.path.exists("./search"):
+        #     os.remove("./search")
+        url = f"https://www.google.com/search?q={train}%2F+site%3Aindiarailinfo.com"
+        print(url)
+        driver.get(url)
+        # /html/body/div[6]/div/div[5]/div[9]/div/div[2]/div[2]/div/div/div[1]/div/div/div[1]/div/div/span/a/h3
+        # /html/body/div[6]/div/div[5]/div[9]/div/div[2]/div[2]/div/div/div[1]/div/div/div[1]/div/div/span/a/h3
+        # /html/body/div[4]/main/ol/li[1]/div[1]/a/div[2]/div[2]/div/cite
+                                                # //*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/span/a/div/div/span
+        website = driver.find_element(By.CLASS_NAME, 'LC20lb')
+        # //*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/span/a/div/div/div/cite
+        # website = driver.find_element("xpath", '//*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/span/a/h3')
+                                                # //*[@id="rso"]/div[1]/div/div/div[1]/div/div/span/a/h3
+                                            # '/html/body/div[4]/main/ol/li[1]/h2/a'
+        website.click()
         
-        try:
-            driver = webdriver.Chrome(options=chrome_options)
-            # if os.path.exists("./search"):
-            #     os.remove("./search")
-            url = f"https://www.google.com/search?q={train}%2F+site%3Aindiarailinfo.com"
-            print(url)
-            driver.get(url)
-            time.sleep(3)
-            # /html/body/div[6]/div/div[5]/div[9]/div/div[2]/div[2]/div/div/div[1]/div/div/div[1]/div/div/span/a/h3
-            # /html/body/div[6]/div/div[5]/div[9]/div/div[2]/div[2]/div/div/div[1]/div/div/div[1]/div/div/span/a/h3
-            # /html/body/div[4]/main/ol/li[1]/div[1]/a/div[2]/div[2]/div/cite
-            website = driver.find_element("xpath", '//*[@id="rso"]/div[1]/div/div/div[1]/div/div/span/a/h3')
-                                                    # //*[@id="rso"]/div[1]/div/div/div[1]/div/div/span/a/h3
-                                                # '/html/body/div[4]/main/ol/li[1]/h2/a'
-            website.click()
-            
-            railinfo = driver.current_url
-            # with open("search", "rb") as fd:
-            #     data = fd.read()
-            print(railinfo)
-            
-            driver.quit()
-        except Exception as e:
-            print(str(e), train)
-            # driver.get(url)
-            return ""
+        railinfo = driver.current_url
+        # with open("search", "rb") as fd:
+        #     data = fd.read()
+        print(railinfo)
+        
+        driver.quit()
+        # except Exception as e:
+        #     print(str(e), train)
+        #     # driver.get(url)
+        #     return ""
         return railinfo
 
     def searchInWebShareRakePosition(self, train):
@@ -178,10 +206,10 @@ class MstsConsistGen:
             
         except Exception as e:
             print(train, str(e))
-            # try:
-            #     findTrain = self.SearchThroughGoogle(train)
-            # except Exception as e:
-            #     print(f"{train} failed")
+            try:
+                findTrain = self.SearchThroughGoogle(train)
+            except Exception as e:
+                print(f"{train} failed")
                
         if len(findTrain) != 0:
             fix_url = MstsConsistGen.fixUrl(findTrain)

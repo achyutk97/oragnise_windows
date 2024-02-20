@@ -1,0 +1,3 @@
+*.con
+*.pyc
+*./msts/ConsistsGen/consists/*
