@@ -124,13 +124,17 @@ def readJsonAndCreateTemplate():
                 fileName = findCoachesNameForICF(j.upper())
                 listHolder.append(TemplateUpdater(fileName, counter))
             elif "lhb" in TrainDataDict[i]["rakeType"].lower():
-                fileName = findCoachesNameForLHB(j.upper())
-                listHolder.append(TemplateUpdater(fileName, counter))
+                if TrainDataDict[i]["trainType"].lower() == "Shatabdi Express".lower():
+                    fileName = genShatabdiExp(j.upper())
+                    listHolder.append(TemplateUpdater(fileName, counter))
+                else:
+                    fileName = findCoachesNameForLHB(j.upper())
+                    listHolder.append(TemplateUpdater(fileName, counter))
             else:
                 print(i)
                 fileName = findCoachesNameForLHB(j.upper())
                 listHolder.append(TemplateUpdater(fileName, counter))
-            counter+=1;
+            counter+=1
 
         if len(findAllRakes[1:]) ==  listHolder:
             raise Exception("Issue")
@@ -199,5 +203,20 @@ def findCoachesNameForLHB(value: str):
             print(value)
             return "NA Na"
 
+# E:\DCIM\Train Simulator\TRAINS\TRAINSET\VG_LHB_COACHES
+
+def genShatabdiExp(value):
+    if value.startswith("EOG"):
+        return valueFinder("VG_LHB_EOG")
+    elif value.startswith("C"):
+        return "VG_LHB_CHAIRCAR_AC_2 VG_LHB_COACHES"
+    elif value.startswith("EV"):
+        return "VG_LHB_VISTADOME VG_LHB_COACHES"
+    elif value.startswith("E"):
+        return "VG_LHB_CHAIRCAR_AC_GREY_FIRST VG_LHB_COACHES"
+    else:
+        print(value)
+        return "NA Na"
+    
 if __name__ == "__main__":
     readJsonAndCreateTemplate()

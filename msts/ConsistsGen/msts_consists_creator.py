@@ -23,6 +23,31 @@ class MstsConsistGen:
         self.wholeTrainName = []
         self.data = ""
 
+    
+    def findTrains(self):
+        numberOfTrainPresent = len(self.trainNumbers)
+            
+        dictTrainRake = {}
+        c = 0
+        for i, j in zip(self.trainNumbers, self.wholeTrainName):
+            c+=1
+            dictTrainRake[j] = {}
+            loco, rakeType, rakePosition = self.searchInWebShareRakePosition(i)
+            dictTrainRake[j]["loco"] = loco
+            dictTrainRake[j]["rakeType"] = rakeType
+            dictTrainRake[j]["rakePosition"] = rakePosition
+            dictTrainRake[j]["trainType"] = self.findTrainType(j)
+
+        jsonData = json.dumps(dictTrainRake, indent=4)
+
+        with open("TrainData.json", "w") as fd:
+            fd.write(jsonData)
+            
+        if len(dictTrainRake.keys()) != numberOfTrainPresent:
+            raise Exception(f"Some Train missing {numberOfTrainPresent}, {len(dictTrainRake.keys())}")
+            
+            
+                
     def findallTrainInHTML(self):
         if len(sys.argv) < 2:
             with open(config.InputFile, "r") as fd:
@@ -37,24 +62,25 @@ class MstsConsistGen:
                 self.trainNumbers.append(train[0])
                 self.wholeTrainName.append(" ".join(train))
             
-            numberOfTrainPresent = len(self.trainNumbers)
-
-            dictTrainRake = {}
-            for i, j in zip(self.trainNumbers, self.wholeTrainName):
-                dictTrainRake[j] = {}
-                loco, rakeType, rakePosition = self.searchInWebShareRakePosition(i)
-                dictTrainRake[j]["loco"] = loco
-                dictTrainRake[j]["rakeType"] = rakeType
-                dictTrainRake[j]["rakePosition"] = rakePosition
-                dictTrainRake[j]["trainType"] = self.findTrainType(j)
-
-            jsonData = json.dumps(dictTrainRake, indent=4)
-
-            if len(dictTrainRake.keys()) != numberOfTrainPresent:
-                raise Exception(f"Some Train missing {numberOfTrainPresent}, {len(dictTrainRake.keys())}")
             
-            with open("TrainData.json", "w") as fd:
-                fd.write(jsonData)
+            # numberOfTrainPresent = len(self.trainNumbers)
+
+            # dictTrainRake = {}
+            # for i, j in zip(self.trainNumbers, self.wholeTrainName):
+            #     dictTrainRake[j] = {}
+            #     loco, rakeType, rakePosition = self.searchInWebShareRakePosition(i)
+            #     dictTrainRake[j]["loco"] = loco
+            #     dictTrainRake[j]["rakeType"] = rakeType
+            #     dictTrainRake[j]["rakePosition"] = rakePosition
+            #     dictTrainRake[j]["trainType"] = self.findTrainType(j)
+
+            # jsonData = json.dumps(dictTrainRake, indent=4)
+
+            # if len(dictTrainRake.keys()) != numberOfTrainPresent:
+            #     raise Exception(f"Some Train missing {numberOfTrainPresent}, {len(dictTrainRake.keys())}")
+            
+            # with open("TrainData.json", "w") as fd:
+            #     fd.write(jsonData)
         else:
             with open(config.IndividualTrainPath, "r") as fd:
                 self.data = fd.read()
@@ -65,25 +91,9 @@ class MstsConsistGen:
             for i in self.data.split("\n"):
                 self.trainNumbers.append(i.split()[0])
                 self.wholeTrainName.append(i)
-            
-            numberOfTrainPresent = len(self.trainNumbers)
-            
-            dictTrainRake = {}
-            for i, j in zip(self.trainNumbers, self.wholeTrainName):
-                dictTrainRake[j] = {}
-                loco, rakeType, rakePosition = self.searchInWebShareRakePosition(i)
-                dictTrainRake[j]["loco"] = loco
-                dictTrainRake[j]["rakeType"] = rakeType
-                dictTrainRake[j]["rakePosition"] = rakePosition
-                dictTrainRake[j]["trainType"] = self.findTrainType(j)
+          
+        self.findTrains()
 
-            jsonData = json.dumps(dictTrainRake, indent=4)
-
-            if len(dictTrainRake.keys()) != numberOfTrainPresent:
-                raise Exception(f"Some Train missing {numberOfTrainPresent}, {len(dictTrainRake.keys())}")
-            
-            with open("TrainData.json", "w") as fd:
-                fd.write(jsonData)
 
     @staticmethod
     def fixUrl(url):

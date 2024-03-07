@@ -1,24 +1,29 @@
 import os
 
+
+MSTS_DIR = r"E:\DCIM\Train Simulator\\"
 IndividualTrainPath = "../InputFiles/individualTrains.log"
 CWD = os.getcwd() + "\\"
 InputFile = CWD + "../InputFiles/trafficTrain.log"
-LHB = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET\VG_LHB_COACHES_SLEEPER"
-ICF = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET\BGPro_ICF"
-CHAIRCAR = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET\VG_LHB_COACHES"
+LHB = fr"{MSTS_DIR}TRAINS\TRAINSET\VG_LHB_COACHES_SLEEPER"
+ICF = fr"{MSTS_DIR}TRAINS\TRAINSET\BGPro_ICF"
+CHAIRCAR = fr"{MSTS_DIR}TRAINS\TRAINSET\VG_LHB_COACHES"
 
-WAP7 = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET\BGPro_WAP7"
-WAP5 = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET\BGPro_WAP5"
-WAG9 = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET\BGPro_WAG9"
-WDG_4 = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET\BGPro - EMD WDG-4"
-WDG_4D = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET\BGPro - EMD WDG-4D"
-WDP_4D = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET\BGPro - EMD WDP-4D"
-WDP_4B = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET\BGPro - EMD WDP-4B"
+WAP7 = fr"{MSTS_DIR}TRAINS\TRAINSET\BGPro_WAP7"
+WAP5 = fr"{MSTS_DIR}TRAINS\TRAINSET\BGPro_WAP5"
+WAG9 = fr"{MSTS_DIR}TRAINS\TRAINSET\BGPro_WAG9"
+WDG_4 = fr"{MSTS_DIR}TRAINS\TRAINSET\BGPro - EMD WDG-4"
+WDG_4D = fr"{MSTS_DIR}TRAINS\TRAINSET\BGPro - EMD WDG-4D"
+WDP_4D = fr"{MSTS_DIR}TRAINS\TRAINSET\BGPro - EMD WDP-4D"
+WDP_4B = fr"{MSTS_DIR}TRAINS\TRAINSET\BGPro - EMD WDP-4B"
 
-WAP4 = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET"
-ALCO = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET"
-WDM3D = r"C:\Users\achyu\OneDrive\Documents\My Games\Train Simulator\TRAINS\TRAINSET\BGPro - WDM-3A Rebuilts"
+WAP4 = fr"{MSTS_DIR}TRAINS\TRAINSET"
+ALCO = fr"{MSTS_DIR}TRAINS\TRAINSET"
+WDM3D = fr"{MSTS_DIR}TRAINS\TRAINSET\BGPro - WDM-3A Rebuilts"
 
 
 LHB_PARENT = os.path.split(LHB)[-1]
 ICF_PARENT = os.path.split(ICF)[-1]
+
+INPUT_CONSISTS_CORRECTOR_FILE = r"C:\Users\achyu\Downloads\12707 ANDHRA PRADESH SAMPARK KRANTI EXPRESS\CONSISTS"
+RegexForTrainNumber = r"_\d+"

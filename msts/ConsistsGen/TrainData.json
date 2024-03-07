@@ -1,206 +1,44 @@
 {
-    "16331 Mumbai CSMT - Thiruvananthapuram Central Express": {
+    "12702 Hussain Sagar SF Express": {
+        "loco": "LGD/WAP-7",
+        "rakeType": "LHB Rake",
+        "rakePosition": "LOCO SLR gs S1 S2 b1 b2 b3 b4 B5 b6 b7 A1 A2 A3 gs SLR.",
+        "trainType": "Express"
+    },
+    "17663 Raichur - Parbhani Express": {
+        "loco": "GY/WDP-4B",
+        "rakeType": "ICF Rake",
+        "rakePosition": "LOCO SLR GS A1 B1 S1 S2 S3 S4 S5 S6 S7 S8 S9 S10 S11 GS SLR.",
+        "trainType": "Express"
+    },
+    "22881 Pune - Bhubaneswar Superfast Express": {
+        "loco": "LGD/WAP-7",
+        "rakeType": "LHB Rake",
+        "rakePosition": "LOCO EOG GS H1 A1 A2 ME1 B1 B2 B3 B4 B5 B6 B7 S1 S2 S3 S4 S5 S6 GS SLR.",
+        "trainType": "Express"
+    },
+    "11301 Udyan Express": {
         "loco": "RPM/WAP-7",
         "rakeType": "LHB Rake",
-        "rakePosition": "LOCO-SLR-UR- S1-S2-S3-S4-S5-S6 A1-A2-B1-B2-B3 M1-M2-M3-M4- UR- EOG.",
+        "rakePosition": "L-SLR-UR UR B3-B2-B1-H1-A3-A2-A1-M2-M1-S8-S7-S6-S5-S4-S3-S2-S1 UR -EOG.",
         "trainType": "Express"
     },
-    "06596 Dharmavaram - KSR Bengaluru MEMU Special": {
-        "loco": "NA",
-        "rakeType": "ICF Rake",
-        "rakePosition": "NA",
-        "trainType": "MEMU"
-    },
-    "17212 Kondaveedu Express": {
-        "loco": "LGD/WAP-7",
-        "rakeType": "LHB Rake",
-        "rakePosition": "LOCO EOG GS H1 A1 A2 b6 b5 B4 B3 B2 B1 S8 S7 S6 S5 S4 S3 S2 S1 GS  SLR.",
-        "trainType": "Express"
-    },
-    "22883 Puri - Yesvantpur Weekly Garib Rath Express": {
-        "loco": "VSKP/WAP-7",
-        "rakeType": "ICF Rake",
-        "rakePosition": "LOCO GD1 G1 G2 G3 G4 G5 G6 G7 G8 G9 G10 G11 G12 G13 G14 G15 GD2.",
-        "trainType": "Garib Rath Express"
-    },
-    "06516 Sri Sathya Sai Prashanthi Nilayam - KSR Bengaluru MEMU Express Special": {
-        "loco": "NA",
-        "rakeType": "ICF Rake",
-        "rakePosition": "NA",
-        "trainType": "MEMU"
-    },
-    "18464 Prasanti Express": {
-        "loco": "LGD/WAP-7",
-        "rakeType": "LHB Rake",
-        "rakePosition": "LOCO EOG GS S6 S5 S4 S3 S2 S1 PC B7 B6 B5 B4 B3 B2 B1 A2 A1 H1 GS SLR.",
-        "trainType": "Express"
-    },
-    "12975 Mysuru - Jaipur SF Express": {
-        "loco": "LGD/WAP-7",
-        "rakeType": "LHB Rake",
-        "rakePosition": "LOCO-EOG-GS-GS-S1-S2-S3-S4-S5-PC-M1-B1-B2-B3-B4-B5-B6-A1-A2-HA1-GS-EOG-HCPV.",
-        "trainType": "Express"
-    },
-    "12648 Kongu SF Express": {
-        "loco": "ED/WAP-7",
-        "rakeType": "LHB Rake",
-        "rakePosition": "LOCO-HCPV-EOG-UR-UR--A2-A1-B7-B6-B5-B4-B3-B2-B1-S6-S5-S4-S3-S2-S1-UR-UR-EOG.",
-        "trainType": "Express"
-    },
-    "07693 Guntakal - Hindupur DEMU Special": {
-        "loco": "NA",
-        "rakeType": "ICF Rake",
-        "rakePosition": "NA",
-        "trainType": "DEMU"
-    },
-    "22831 Howrah - Sri Sathya Sai Prashanthi Nilayam Superfast Express": {
-        "loco": "SRC/WAP-7",
-        "rakeType": "LHB Rake",
-        "rakePosition": "LOCO SLR GEN GEN GEN GEN GEN GEN S1 S2 S3 S4 S5 S6 S7 S8 S9 B1 B2 B3 B4 A1 EOG ;.",
-        "trainType": "Express"
-    },
-    "07670 Kacheguda - Guntakal Passenger Special": {
-        "loco": "NA",
-        "rakeType": "ICF Rake",
-        "rakePosition": "Loco SLR UR UR UR UR UR UR UR UR SLR.",
-        "trainType": "Express"
-    },
-    "07499 Kurnool City - Nandyal DEMU Express Special": {
-        "loco": "NA",
-        "rakeType": "ICF Rake",
-        "rakePosition": "NA",
-        "trainType": "DEMU"
-    },
-    "16353 Kacheguda - Nagercoil Weekly Express": {
-        "loco": "ED/WAP-4",
-        "rakeType": "ICF Rake",
-        "rakePosition": "LOCO SLR UR A1 B5 B4 B3 B2 B1 S11 S10 S9 S8 S7 S6 S5 PC S4 S3 S2 S1 UR SLR.",
-        "trainType": "Express"
-    },
-    "17652 Kacheguda - Chengalpattu Express": {
-        "loco": "LGD/WAP-7",
-        "rakeType": "ICF Rake",
-        "rakePosition": "LOCO-SLR-GS--A1-B1-B2-B3-B4-B5 S1-S2-S3-S4-S5-S6-S7-S8-S9-S10-S11-S12-GS-SLR.",
-        "trainType": "Express"
-    },
-    "17027 Hundry Express": {
+    "07663 Vijayapura - Raichur Passenger Special": {
         "loco": "BZA/WAP-4",
-        "rakeType": "ICF-CBC Rake",
-        "rakePosition": "ENG SLR GS GS GS GS GS GS GS GS OCV GS GS D1 GS GS SLR.",
-        "trainType": "Express"
-    },
-    "12766 Amravati - Tirupati SF Express": {
-        "loco": "GTL/WDM-3A/twins",
-        "rakeType": "ICF-CBC Rake",
-        "rakePosition": "Loco-SLR-GS-A1-B1-B2-B3-S1-S2-S3-S4-S5-S6-S7-S8-GS-GS-SLR.",
-        "trainType": "Express"
-    },
-    "12770 Seven Hills SF Express": {
-        "loco": "LGD/WAP-7",
-        "rakeType": "ICF Rake",
-        "rakePosition": "Loco SLR GS s10 S9 S8-S7-S6-S5-S4-S3-S2-s1 B5 b4 b3 B2 b1 A1 a2 gs SLR.",
-        "trainType": "Express"
-    },
-    "07606 Akola - Tirupati SF Special Fare Special": {
-        "loco": "GTL/WDM-3D/twins",
-        "rakeType": "ICF Rake",
-        "rakePosition": "LOCO SLR UR UR UR A1-B1-B2-B3-b4 S1-PC-S2-S3-S4-S5-S6-S7-S8-s9 S10 UR SLR ;.",
-        "trainType": "Express"
-    },
-    "17435 Kacheguda - Kurnool City Express": {
-        "loco": "NA",
         "rakeType": "ICF Rake",
         "rakePosition": "NA",
         "trainType": "Express"
     },
-    "12785 Kacheguda - Mysuru SF Express": {
-        "loco": "LGD/WAP-7",
-        "rakeType": "ICF Rake",
-        "rakePosition": "LOCO SLR GN S1 S2 S3 S4 S5 S6 S7 S8 S9 S10 S11 S12 B1 B2 B3 B4 B5 A1 A2 HA1 GN SLR.",
-        "trainType": "Express"
-    },
-    "22706 Jammu Tawi - Tirupati Humsafar Express": {
+    "18520 Mumbai LTT - Visakhapatnam Express": {
         "loco": "LGD/WAP-7",
         "rakeType": "LHB Rake",
-        "rakePosition": "LOCO-EOG-B1-B2-B3-B4-B5-B6-B7-B8-PC-B9-B10-B11-B12-B13-B14-B15-B16-B17-B18-B19-EOG.",
+        "rakePosition": "Loco EOG H1 A2 A1 B6 B5 B4 B3 B2 B1 S6 S5 S4 S3 S2 S1 GEN GEN GEN SLR.",
         "trainType": "Express"
     },
-    "16733 Rameswaram - Okha Express": {
-        "loco": "GOC/WDP-4D",
-        "rakeType": "ICF Rake",
-        "rakePosition": "LOCO-SLR-UR-S1-S2-S3-S4-S5-S6-PC-B8-B7-B6-B5-B4-B3-B2-B1-A2-A1-UR-UR-SLR.",
-        "trainType": "Express"
-    },
-    "12797 Venkatadri SF Express": {
+    "12026 Secunderabad - Pune Shatabdi Express": {
         "loco": "LGD/WAP-7",
-        "rakeType": "ICF Rake",
-        "rakePosition": "LOCO -SLR UR - HA1 - A1 - A2 - B1 - B2 b3 - S1 - S2 - S3 - S4 - S5 - S6 - S7 - S8 - S9 - S10 - S11 - S12 - S13 - S14 - UR SLR.",
-        "trainType": "Express"
-    },
-    "12790 Mangaluru Central - Kacheguda SF Express": {
-        "loco": "NA",
         "rakeType": "LHB Rake",
-        "rakePosition": "NA",
-        "trainType": "Express"
-    },
-    "17603 Kacheguda - Yelahanka Express": {
-        "loco": "LGD/WAP-7",
-        "rakeType": "ICF Rake",
-        "rakePosition": "LOCO-SLR-GS-S1-S2-S3-S4-S5-S6-S7-S8-S9-S10-B1-B2-A2-A1-HA1-GS-SLR.",
-        "trainType": "Express"
-    },
-    "17603-Slip Kacheguda - SSS Hubballi Prasanti Nilayam Express Slip": {
-        "loco": "NA",
-        "rakeType": "ICF Rake",
-        "rakePosition": "NA",
-        "trainType": "Express"
-    },
-    "17603-Slip2 Kacheguda - Vasco Da Gama Express Slip": {
-        "loco": "NA",
-        "rakeType": "ICF Rake",
-        "rakePosition": "NA",
-        "trainType": "Express"
-    },
-    "17252 Kacheguda - Guntur Express": {
-        "loco": "NA",
-        "rakeType": "LHB Rake",
-        "rakePosition": "NA",
-        "trainType": "Express"
-    },
-    "09519 Madurai - Okha Special Fare Special": {
-        "loco": "GTL/WAG-7",
-        "rakeType": "ICF Rake",
-        "rakePosition": "LOCO-SLR-GS-GS-A1-B1-B2-B3-S1-S2-S3-S4-S5-S6-S7-S8-S9-S10-S11-S12-GS-GS-SLR.",
-        "trainType": "Express"
-    },
-    "19301 Dr. Ambedkar Nagar - Yesvantpur Weekly Express": {
-        "loco": "BRC/WAP-7",
-        "rakeType": "LHB Rake",
-        "rakePosition": "Loco eog UR a1 a2 b1 b2 b3 b4 b5 B6 pc s1 s2 s3 s4 s5 s6 s7 s8 UR UR eog.",
-        "trainType": "Express"
-    },
-    "07789 Kacheguda - Mahabubnagar MEMU Special": {
-        "loco": "NA",
-        "rakeType": "ICF Rake",
-        "rakePosition": "NA",
-        "trainType": "MEMU"
-    },
-    "16003 MGR Chennai Central - Nagarsol Weekly Express": {
-        "loco": "ED/WAP-4",
-        "rakeType": "ICF-CBC Rake",
-        "rakePosition": "L SLR UR A1 A2 A3 B1 B2 B3 S1 S2 S3 S4 S5 S6 S7 S8 S9 S10 S11 S12 S13 UR SLR.",
-        "trainType": "Express"
-    },
-    "47159 Lingampalli - Umdanagar MMTS": {
-        "loco": "NA",
-        "rakeType": "ICF Rake",
-        "rakePosition": "NA",
-        "trainType": "MMTS"
-    },
-    "47194 Lingampalli - Umdanagar MMTS": {
-        "loco": "NA",
-        "rakeType": "ICF Rake",
-        "rakePosition": "NA",
-        "trainType": "MMTS"
+        "rakePosition": "Loco EOG C1 C2 C3 C4 E1 E2 C5 C6 C7 C8 C9 EOG EV1.",
+        "trainType": "Shatabdi Express"
     }
 }
