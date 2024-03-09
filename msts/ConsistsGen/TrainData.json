@@ -1,44 +1,8 @@
 {
-    "12702 Hussain Sagar SF Express": {
-        "loco": "LGD/WAP-7",
+    "22690 Yesvantpur - Ahmedabad Weekly SF Express (PT)": {
+        "loco": "KJM/WAP-7",
         "rakeType": "LHB Rake",
-        "rakePosition": "LOCO SLR gs S1 S2 b1 b2 b3 b4 B5 b6 b7 A1 A2 A3 gs SLR.",
+        "rakePosition": "LOCO-EOG-S1-S2-S3-S4-S5-S6-S7-S8-PC-B6-B5-B4-B3-B2-B1-A2-A1-HA1-UR UR EOG.",
         "trainType": "Express"
-    },
-    "17663 Raichur - Parbhani Express": {
-        "loco": "GY/WDP-4B",
-        "rakeType": "ICF Rake",
-        "rakePosition": "LOCO SLR GS A1 B1 S1 S2 S3 S4 S5 S6 S7 S8 S9 S10 S11 GS SLR.",
-        "trainType": "Express"
-    },
-    "22881 Pune - Bhubaneswar Superfast Express": {
-        "loco": "LGD/WAP-7",
-        "rakeType": "LHB Rake",
-        "rakePosition": "LOCO EOG GS H1 A1 A2 ME1 B1 B2 B3 B4 B5 B6 B7 S1 S2 S3 S4 S5 S6 GS SLR.",
-        "trainType": "Express"
-    },
-    "11301 Udyan Express": {
-        "loco": "RPM/WAP-7",
-        "rakeType": "LHB Rake",
-        "rakePosition": "L-SLR-UR UR B3-B2-B1-H1-A3-A2-A1-M2-M1-S8-S7-S6-S5-S4-S3-S2-S1 UR -EOG.",
-        "trainType": "Express"
-    },
-    "07663 Vijayapura - Raichur Passenger Special": {
-        "loco": "BZA/WAP-4",
-        "rakeType": "ICF Rake",
-        "rakePosition": "NA",
-        "trainType": "Express"
-    },
-    "18520 Mumbai LTT - Visakhapatnam Express": {
-        "loco": "LGD/WAP-7",
-        "rakeType": "LHB Rake",
-        "rakePosition": "Loco EOG H1 A2 A1 B6 B5 B4 B3 B2 B1 S6 S5 S4 S3 S2 S1 GEN GEN GEN SLR.",
-        "trainType": "Express"
-    },
-    "12026 Secunderabad - Pune Shatabdi Express": {
-        "loco": "LGD/WAP-7",
-        "rakeType": "LHB Rake",
-        "rakePosition": "Loco EOG C1 C2 C3 C4 E1 E2 C5 C6 C7 C8 C9 EOG EV1.",
-        "trainType": "Shatabdi Express"
     }
 }
