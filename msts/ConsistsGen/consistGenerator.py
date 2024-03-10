@@ -20,14 +20,18 @@ def TemplateUpdater(fileName, counter):
 		)"""
     return template
 
-def searchLoco(rootdir):
-    regex = re.compile('(.*eng$)')
+def searchLoco(rootdir, loco:str=""):
+    if loco == "":
+        regex = re.compile('(.*eng$)')
+    else:
+        regex = re.compile(fr"(.*)({loco.upper()}|{loco.lower()})(.*).eng$", )
 
     listENG = []
     for root, dirs, files in os.walk(rootdir):
         for file in files:
             if regex.match(file):
                 listENG.append((file.split(".")[0], root.split("\\")[-1]))
+                
     return listENG
 
 def findLocoPath(loco):
@@ -46,7 +50,7 @@ def findLocoPath(loco):
 
 
 
-wap4List = searchLoco(config.WAP4)
+wap4List = searchLoco(config.WAP4, "wap4")
 wap7List = searchLoco(config.WAP7)
 wadg4List = searchLoco(config.WDG_4)
 wadg4dList = searchLoco(config.WDG_4D)
@@ -113,27 +117,56 @@ def readJsonAndCreateTemplate():
         if "NA" in rakePos:
             print(i)
             rakePos = DEFAULT_RAKE
+            if "DEMU".lower() in TrainDataDict[i]["trainType"].lower():
+                rakePos = "DNG D1 D2 D3 D4 D5 D6 D7 D8 D9 D10 D11 D12 DNG"
+            elif "MEMU".lower() in TrainDataDict[i]["trainType"].lower():
+                rakePos = "EG D1 D2 D3 D4 D5 D6 D7 D8 D9 D10 D11 D12 EG"
         findAllRakes = re.findall(r"[A-Za-z0-9]+", rakePos)
         counter = 1
         listHolder = []
 
+        LHB_TYPE = ["BGPRO", "VG"]
+        LHB_Choice = random.choice(LHB_TYPE)
+        
         for j in findAllRakes:
             if ("loco" in j.lower()) or ("eng" in j.lower()):
                 continue
-            if "icf" in TrainDataDict[i]["rakeType"].lower():
-                fileName = findCoachesNameForICF(j.upper())
-                listHolder.append(TemplateUpdater(fileName, counter))
-            elif "lhb" in TrainDataDict[i]["rakeType"].lower():
-                if TrainDataDict[i]["trainType"].lower() == "Shatabdi Express".lower():
-                    fileName = genShatabdiExp(j.upper())
+            if TrainDataDict[i]["trainType"].lower() == "Express".lower():
+                
+                if "icf" in TrainDataDict[i]["rakeType"].lower():
+                    fileName = findCoachesNameForICF(j.upper())
                     listHolder.append(TemplateUpdater(fileName, counter))
+                elif "lhb" in TrainDataDict[i]["rakeType"].lower():
+                    if LHB_Choice == "BGPRO":
+                        fileName = findBgProLHB(j.upper())
+                        listHolder.append(TemplateUpdater(fileName, counter))
+                    else:
+                        fileName = findCoachesNameForLHB(j.upper())
+                        listHolder.append(TemplateUpdater(fileName, counter))
                 else:
+                    print(i)
                     fileName = findCoachesNameForLHB(j.upper())
                     listHolder.append(TemplateUpdater(fileName, counter))
+            elif TrainDataDict[i]["trainType"].lower() == "Shatabdi Express".lower():
+                fileName = genShatabdiExp(j.upper())
+                listHolder.append(TemplateUpdater(fileName, counter))
+            elif TrainDataDict[i]["trainType"].lower() == "Garib Rath Express".lower():
+                fileName = genGaribRathExp(j.upper())
+                listHolder.append(TemplateUpdater(fileName, counter))
+            elif "DEMU".lower() in TrainDataDict[i]["trainType"].lower():
+                fileName = getDEMURake(j.upper())
+                listHolder.append(TemplateUpdater(fileName, counter))
+            elif "MEMU".lower() in TrainDataDict[i]["trainType"].lower():
+                fileName = genMEMURake(j.upper())
+                listHolder.append(TemplateUpdater(fileName, counter))
+            elif "Vande Bharat".lower() in TrainDataDict[i]["trainType"].lower():
+                fileName = genVBRakes(j.upper())
+                listHolder.append(TemplateUpdater(fileName, counter))
             else:
                 print(i)
                 fileName = findCoachesNameForLHB(j.upper())
                 listHolder.append(TemplateUpdater(fileName, counter))
+                
             counter+=1
 
         if len(findAllRakes[1:]) ==  listHolder:
@@ -150,7 +183,33 @@ def valueFinderForICF(value):
         return f"{value} {config.ICF_PARENT}"
 
 
-
+def findBgProLHB(value:str):
+    if value.startswith("L"):
+        return ("NA, NA")
+    elif value.startswith("SLR"):
+        return valueFinder("SLR")
+    elif value.startswith("B") or value.startswith("AC3") or value.startswith("A3") or value.startswith("A4"):
+        return 'Mumbai_Raj_LHB_3A "BGPro - LHB AC Rajdhani Coaches"'
+    elif value.startswith("AC2") or value.startswith("A2"):
+        return 'Mumbai_Raj_LHB_2A "BGPro - LHB AC Rajdhani Coaches"'
+    elif value.startswith("HA") or value.startswith("H1") or value.startswith("A1") or value.startswith("AC1"):
+        return 'Mumbai_Raj_LHB_1A "BGPro - LHB AC Rajdhani Coaches"'
+    elif value.startswith("UR") or value.startswith("G"):
+        return 'LHB_NonAC_GS_WideWIn "BGPro - LHB Non AC Coaches"'
+    elif value.startswith("EOG"):
+        return 'Mumbai_Raj_LHB_EOG "BGPro - LHB AC Rajdhani Coaches"' 
+    elif value.startswith("HCP"):
+        return valueFinder("VG_LHB_HPCV")
+    elif value.startswith("PC"):
+        return 'Mumbai_Raj_LHB_PANTRY "BGPro - LHB AC Rajdhani Coaches"'
+    elif value.startswith("S") or value.startswith("D1"):
+        return random.choice([('LHB_NonAC_SLP_WideWIn "BGPro - LHB Non AC Coaches"'), ('LHB_NonAC_SLP "BGPro - LHB Non AC Coaches"')])
+    elif value.startswith("M"):
+        return valueFinder("VG_LHB_AC_3_TIER_ECONOMY")
+    else:
+        print(value)
+        return "NA Na"
+    
 def findCoachesNameForICF(value: str):
     if value.startswith("L"):
         return ("NA, NA")
@@ -177,31 +236,31 @@ def findCoachesNameForICF(value: str):
         return "NA Na"
     
 def findCoachesNameForLHB(value: str):
-        if value.startswith("L"):
-            return ("NA, NA")
-        elif value.startswith("SLR"):
-            return valueFinder("SLR")
-        elif value.startswith("B") or value.startswith("AC3") or value.startswith("A3") or value.startswith("A4"):
-            return valueFinder("AC_3")
-        elif value.startswith("AC2") or value.startswith("A2"):
-            return valueFinder("AC_2")
-        elif value.startswith("HA") or value.startswith("H1") or value.startswith("A1") or value.startswith("AC1"):
-            return valueFinder("VG_LHB_AC_FIRST")
-        elif value.startswith("UR") or value.startswith("G"):
-            return valueFinder("VG_LHB_SECONDCLASS")
-        elif value.startswith("EOG"):
-            return valueFinder("VG_LHB_EOG")
-        elif value.startswith("HCP"):
-            return valueFinder("VG_LHB_HPCV")
-        elif value.startswith("PC"):
-            return valueFinder("VG_LHB_PANTRY_CAR")
-        elif value.startswith("S") or value.startswith("D1"):
-            return valueFinder("VG_LHB_SLEEPER")
-        elif value.startswith("M"):
-            return valueFinder("VG_LHB_AC_3_TIER_ECONOMY")
-        else:
-            print(value)
-            return "NA Na"
+    if value.startswith("L"):
+        return ("NA, NA")
+    elif value.startswith("SLR"):
+        return valueFinder("SLR")
+    elif value.startswith("B") or value.startswith("AC3") or value.startswith("A3") or value.startswith("A4"):
+        return valueFinder("AC_3")
+    elif value.startswith("AC2") or value.startswith("A2"):
+        return valueFinder("AC_2")
+    elif value.startswith("HA") or value.startswith("H1") or value.startswith("A1") or value.startswith("AC1"):
+        return valueFinder("VG_LHB_AC_FIRST")
+    elif value.startswith("UR") or value.startswith("G"):
+        return valueFinder("VG_LHB_SECONDCLASS")
+    elif value.startswith("EOG"):
+        return valueFinder("VG_LHB_EOG")
+    elif value.startswith("HCP"):
+        return valueFinder("VG_LHB_HPCV")
+    elif value.startswith("PC"):
+        return valueFinder("VG_LHB_PANTRY_CAR")
+    elif value.startswith("S") or value.startswith("D1"):
+        return valueFinder("VG_LHB_SLEEPER")
+    elif value.startswith("M"):
+        return valueFinder("VG_LHB_AC_3_TIER_ECONOMY")
+    else:
+        print(value)
+        return "NA Na"
 
 # E:\DCIM\Train Simulator\TRAINS\TRAINSET\VG_LHB_COACHES
 
@@ -218,5 +277,35 @@ def genShatabdiExp(value):
         print(value)
         return "NA Na"
     
+def genGaribRathExp(value):
+    if value.startswith("EOG"):
+        return "BRW_GARIBRATH_EOG BRW_ICF_GARIBRATH"
+    elif value.startswith("GD"):
+        return "BRW_GARIBRATH_EOG BRW_ICF_GARIBRATH"
+    elif value.startswith("G"):
+        return "BRW_GARIBRATH_3AC BRW_ICF_GARIBRATH"
+    else:
+        print(value)
+        return "BRW_GARIBRATH_3AC BRW_ICF_GARIBRATH"
+
+def getDEMURake(value):
+    if value.startswith("DNG"):
+        return "ICFDEMU_NEW AERO_DMU"
+    else:
+        return "AERO_DMU_COACH AERO_DMU"
+    
+def genMEMURake(value):
+    if value.startswith("EG"):
+        return "MEMUDCYFG RAJ_MEMU2"
+    else:
+        return "MEMUY AERO_DMU"
+
+def genVBRakes(value):
+    if value.startswith("C"):
+        return "vbcc VandeBharat"
+    else:
+        return "vbexcc VandeBharat"
+
+
 if __name__ == "__main__":
     readJsonAndCreateTemplate()

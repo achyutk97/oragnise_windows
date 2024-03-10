@@ -1,8 +1,74 @@
 {
-    "22690 Yesvantpur - Ahmedabad Weekly SF Express (PT)": {
-        "loco": "KJM/WAP-7",
-        "rakeType": "LHB Rake",
-        "rakePosition": "LOCO-EOG-S1-S2-S3-S4-S5-S6-S7-S8-PC-B6-B5-B4-B3-B2-B1-A2-A1-HA1-UR UR EOG.",
+    "07656 Tirupati - Guntakal Special Fare Special": {
+        "loco": "BZA/WAG-5",
+        "rakeType": "ICF Rake",
+        "rakePosition": "LOCO-SLRD-GS-GS-GS-GS-S2-S1-GS-GS-GS-GS-SLR.",
         "trainType": "Express"
+    },
+    "12975 Mysuru - Jaipur SF Express": {
+        "loco": "LGD/WAP-7",
+        "rakeType": "LHB Rake",
+        "rakePosition": "LOCO-EOG-GS-GS-S1-S2-S3-S4-S5-PC-M1-B1-B2-B3-B4-B5-B6-A1-A2-HA1-GS-EOG-HCPV.",
+        "trainType": "Express"
+    },
+    "18464 Prashanti Express": {
+        "loco": "LGD/WAP-7",
+        "rakeType": "LHB Rake",
+        "rakePosition": "LOCO EOG GS S6 S5 S4 S3 S2 S1 PC B7 B6 B5 B4 B3 B2 B1 A2 A1 H1 GS SLR.",
+        "trainType": "Express"
+    },
+    "20704 Yesvantpur - Kacheguda Vande Bharat Express": {
+        "loco": "NA",
+        "rakeType": "LHB Rake",
+        "rakePosition": "C7 C6 E1 C5 C4 C3 C2 C1.",
+        "trainType": "Vande Bharat"
+    },
+    "17212 Kondaveedu Express": {
+        "loco": "BZA/WAP-7",
+        "rakeType": "LHB Rake",
+        "rakePosition": "LOCO EOG GS H1 A1 A2 b6 b5 B4 B3 B2 B1 S8 S7 S6 S5 S4 S3 S2 S1 GS  SLR.",
+        "trainType": "Express"
+    },
+    "17604 Yelahanka - Kacheguda Express": {
+        "loco": "LGD/WAP-7",
+        "rakeType": "ICF Rake",
+        "rakePosition": "LOCO-SLR-UR-S1-S2-S3-S4-S5-S6-S7-S8-S9-S10-SE1-B1-B2-A1 a2-HA1-UR-SLR.",
+        "trainType": "Express"
+    },
+    "12736 Yesvantpur - Secunderabad Garib Rath Express": {
+        "loco": "BZA/WAG-5",
+        "rakeType": "ICF Rake",
+        "rakePosition": "LOCO - EOG - G11 - G10 - G9- G8- G7- G6- G5- G4- G3- G2- G1- EOG.",
+        "trainType": "Garib Rath Express"
+    },
+    "11014 Coimbatore - Mumbai LTT Express": {
+        "loco": "NA",
+        "rakeType": "LHB Rake",
+        "rakePosition": "NA",
+        "trainType": "Express"
+    },
+    "06516 Sri Sathya Sai Prashanthi Nilayam - KSR Bengaluru MEMU Express Special": {
+        "loco": "NA",
+        "rakeType": "ICF Rake",
+        "rakePosition": "NA",
+        "trainType": "MEMU"
+    },
+    "17307 Basava Express": {
+        "loco": "KJM/WAP-7",
+        "rakeType": "ICF Rake",
+        "rakePosition": "ENG-SLR-GN-GN-GN-HA1-A1-B1-B2-S1-S2-S3-S4-S5-S6-S7-S8-S9-S10-S11-GN-GN-SLR.",
+        "trainType": "Express"
+    },
+    "06265 KSR Bengaluru - Hindupur MEMU Special": {
+        "loco": "NA",
+        "rakeType": "ICF Rake",
+        "rakePosition": "NA",
+        "trainType": "MEMU"
+    },
+    "16549 KSR Bengaluru - Kolar MEMU Express": {
+        "loco": "NA",
+        "rakeType": "ICF Rake",
+        "rakePosition": "-.",
+        "trainType": "MEMU"
     }
 }

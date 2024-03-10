@@ -1,8 +1,6 @@
 import os
-import sys
 import shutil
 import re
-import config as cg
 
 ACT_SERVICES_FOLDER = r"E:\DCIM\Train Simulator\ROUTES\TSDRV4\SERVICES"
 CONSISTS_DIR = r"E:\DCIM\Train Simulator\TRAINS\CONSISTS"
